@@ -9,8 +9,39 @@ body
     color: white;
 }
 
+.bloc-connexion
+{
+display: table;
+border: 2px white solid;
+margin : auto;
+padding: 20px;
+}
 
-.Connexion 
+input, textarea {
+    color: #333;
+	font-size: 15px;
+	padding : 5px;
+}
+ 
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #555;
+	font-size: 15px;
+	padding : 5px;
+}
+ 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #555;
+	font-size: 15px;
+	padding : 5px;
+}
+ 
+input.placeholder, textarea.placeholder {
+    color: #555;
+	font-size: 15px;
+	padding : 5px;
+}
+
+.btn 
 {
 	background-color:#55AB55;
 	-moz-border-radius:28px;
@@ -26,11 +57,11 @@ body
 	text-decoration:none;
 	text-shadow:0px 1px 0px #224422;
 }
-.Connexion:hover
+.btn:hover
 {
 	background-color:#ab5555;
 }
-.Connexion:active 
+.btn:active 
 {
 	position:relative;
 	top:1px;
