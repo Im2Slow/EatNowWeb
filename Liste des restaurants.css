@@ -1,0 +1,19 @@
+.titre
+{
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body
+{
+    background-color: #3B5998;
+    color: white;
+}
+
+p
+{
+    font-family: 'Catamaran', sans-serif;
+}
