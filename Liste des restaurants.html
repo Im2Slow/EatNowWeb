@@ -13,13 +13,17 @@
     <div class="titre">Liste des restaurants</div>
     <br>
     <p>
-        Veuillez choisir le restaurant chez lequel vous voulez commander : <br>
-        <input type="radio" name="restaurant" value="cafetRH" id="cafetRH" /> <label for="cafetRH">Caf&eacutet&eacuteria Rue Haute</label><br
-        />
-        <input type="radio" name="restaurant" value="cantineRH" id="cantineRH" /> <label for="cantineRH">Cantine Rue Haute</label><br>
-        <input type="radio" name="restaurant" value="grill" id="grill" /> <label for="grill">Grill</label><br />
-        <input type="radio" name="restaurant" value="lounge" id="lounge" /> <label for="lounge">Lounge</label><br />
+        <form method="post" action="Choix restaurants.php">
+            Veuillez choisir le restaurant chez lequel vous voulez commander : <br>
+            <input type="radio" name="restaurant" value="cafetRH" id="cafetRH" /> <label for="cafetRH">Caf&eacutet&eacuteria Rue Haute</label><br
+            />
+            <input type="radio" name="restaurant" value="cantineRH" id="cantineRH" /> <label for="cantineRH">Cantine Rue Haute</label><br>
+            <input type="radio" name="restaurant" value="grill" id="grill" /> <label for="grill">Grill</label><br />
+            <input type="radio" name="restaurant" value="lounge" id="lounge" /> <label for="lounge">Lounge</label><br />
+        </form>
     </p>
+  <!--Insérer du code PHP ici pour que en fonction de la valeur de $_POST, le fait de cliquer sur le bouton Valider affiche le menu de commande du bon resto-->
+    <button onclick="self.location.href='Commandes.html'" class="btn"name="Valider">Valider</button>
 </body>
 
 </html>
