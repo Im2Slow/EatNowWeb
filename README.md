@@ -1,7 +1,7 @@
 # EatNowWeb
 
-This repository is made to contain and share all the files regarding our app's website, so basically HTML/CSS.
+As a part of our 2nd year's project in ESILV engineering school, this repository is dedicated to the website that will replace our application on IOS and WindowsPhone (since it will only be available on Android)
 
-Screenshots will be added soon.
+Screenshot links will be added soon.
 
 Last updated : 01/02/17
