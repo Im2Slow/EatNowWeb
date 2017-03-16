@@ -1,0 +1,75 @@
+.titre
+{
+    text-shadow: 2px 2px 4px black;
+}
+
+body
+{
+    background-repeat: no-repeat;
+    background-image: url("http://www.allochauffeurs.fr/uploads/book/ladefenseallochauffeursparis.jpeg");
+}
+.principal
+{
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #3B5998;
+    color: white;
+}
+
+.identification
+{
+    outline: solid white 2px;
+    padding: 10px;
+    display: table;
+    margin: auto;
+}
+
+.Connexion 
+{
+	background-color:#55AB55;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #2a552a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Raleway', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #224422;
+}
+.Connexion:hover
+{
+	background-color:#ab5555;
+}
+.Connexion:active 
+{
+	position:relative;
+	top:1px;
+}
+
+input, textarea {
+    padding : 10px;
+    font-size: 15px;
+    color: #333;
+}
+ 
+input:-moz-placeholder, textarea:-moz-placeholder {
+    padding : 10px;
+    font-size: 15px;
+    color: #555;
+}
+ 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    padding : 10px;
+    font-size: 15px;
+    color: #555;
+}
+ 
+input.placeholder, textarea.placeholder {
+    padding : 10px;
+    font-size: 15px;
+    color: #555;
+}
