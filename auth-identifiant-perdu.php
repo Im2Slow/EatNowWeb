@@ -82,7 +82,7 @@ echo '<div id="erreur">Votre compte a été black-listé!</div>';
 ?>
 ?>
 
-<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Créer un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Cr&eacute;er un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 </div>
  
 <noscript><div id="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>

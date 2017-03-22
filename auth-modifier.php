@@ -123,9 +123,9 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 
     </div>
 
-<h2>Télécharger une image</h2>
+<h2>T&eacute;l&eacute;charger une image</h2>
  
-    <div class="info">Image au format « jpg » uniquement. L'image sera redimensionné automatiquement en 60*60. Une image trop volumineuse ne sera pas pris en charge!</div>
+    <div class="info">Image au format « jpg » uniquement. L'image sera redimensionn&eacute;e automatiquement en 60*60. Une image trop volumineuse ne sera pas prise en charge!</div>
  
 <form enctype="multipart/form-data" action="#" method="post" onsubmit="Verif_attente('message_attente')" id="upload">
 <label for="photo">Image :</label>
