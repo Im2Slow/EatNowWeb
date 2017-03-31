@@ -5,7 +5,7 @@ session_start();
 if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     include("auth-data_bd.php");
     connexion_bd();
-    /on va chercher tout ce qui correspond à l'utilisateur
+    //on va chercher tout ce qui correspond à l'utilisateur
     $affiche = mysql_query("SELECT * FROM LOGIN WHERE pseudo='".mysql_real_escape_string(stripcslashes($_SESSION['pseudo']))."' AND pass='".mysql_real_escape_string($_SESSION['pass'])."' AND valide='".mysql_real_escape_string(1)."' AND statut='".mysql_real_escape_string(1)."'");
     $result = mysql_fetch_assoc($affiche);
      //si le statut ne retourne pas 1, ce n'est pas un admin et on éjecte l'utilisateur
@@ -26,9 +26,10 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     <meta http-equiv="Content-Language" content="fr" />
     <title>Administration</title>
     <link type="text/css" href="auth-style.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
  
-    <body>
+    <body background="img/background2.jpg">
  
     <div id="cadre">
  
@@ -38,7 +39,7 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
  <form name="form" method="POST">
  <?php
     //on sélectionne tout les membres
-    $membre = mysql_query("SELECT id, pseudo FROM LOGIN WHERE statut='0' ORDER BY pseudo ASC");
+    $membre = mysql_query("SELECT id, pseudo FROM LOGIN WHERE statut='1' ORDER BY pseudo ASC");
  
     if(mysql_num_rows($membre)<=1){
     echo '<label>Nombre d\'inscription : </label>'.mysql_num_rows($membre).' membre<br/>';

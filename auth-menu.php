@@ -13,7 +13,7 @@
     echo '<li><a href="auth-admin.php">Administration</a></li>';
     }
     ?>
-    <li><a href="index.php?dec=close">D&eacute;connexion</a></li>
+    <li><a href="index1.php?dec=close">D&eacute;connexion</a></li>
     </ul>
  
-    <div class="ok">Bienvenue « <?php echo utf8_encode($pseudo);?> ». Identifiant : « <?php echo $id;?> »</div>
+    <div class="ok">Bienvenue <?php echo utf8_encode($pseudo);?>.</div>

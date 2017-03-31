@@ -5,17 +5,6 @@ session_start();
 if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     include("auth-data_bd.php");
     connexion_bd();
-	
-/// 5 - la requête liste des restos	
-	//echo 'select R_RestoNom as nom, R_RestoAdresse as adr from t_restaurant<br/>';
-    $index = mysql_query('SELECT name AS nom, address AS addresse, type AS type, description AS description FROM restaurants');	
-
-// 6-  l'affichage des restos
-	while($result = mysql_fetch_array($index)){
-	echo $result['nom'].' - '.$result['addresse'].' - '.$result['type'].' - '.$result['description'].'<br/>';
-	}
-}	
-	
     //on va chercher tout ce qui correspond à l'utilisateur
     $affiche = mysql_query("SELECT * FROM LOGIN WHERE pseudo='".mysql_real_escape_string(stripcslashes($_SESSION['pseudo']))."' AND pass='".mysql_real_escape_string($_SESSION['pass'])."' AND valide='".mysql_real_escape_string(1)."'");
     $result = mysql_fetch_assoc($affiche);
@@ -28,7 +17,6 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     //on libère le résultat de la mémoire
     mysql_free_result($affiche);
     ?>
-	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,24 +24,28 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 <meta http-equiv="Content-Language" content="fr" />
 <title>Administration</title>
 <link type="text/css" href="auth-style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
  
-<body>
+<body background="img/background2.jpg">
  
 <div id="cadre">
  
 <?php include('auth-menu.php');?>
+ <p>
+<br>
+<center><a href="Liste des restaurants.php" class="commander" style="text-align:center">Commander</a></center>
+<br></p>
+ </div>
  
-<p>Texte &agrave; changer !!!</p>
- 
-</div>
+
  
 </body>
 </html>
+ 
 <?php
 //fermeture de la BD
- */
 close_bd();
 //on boucle la session du haut de page
-
+}
 ?>

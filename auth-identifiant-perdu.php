@@ -11,8 +11,8 @@
 <h1>Identifiant perdu</h1>
  <form method="POST" action="#">
 <label for="email">Email : </label><input type="text" name="email" maxlength="50" value="<?php if (!empty($_POST["email"])) { echo stripcslashes(htmlspecialchars($_POST["email"],ENT_QUOTES)); } ?>" /><br/>
-<label for="action">Action : </label><input type="submit" name="Envoyer" value="Envoyer" />
-<input name="Effacer" value="Effacer" type="reset" />
+<label for="action">Action : </label><input type="submit" name="Valider" value="Valider" />
+<input name="Réinitialiser" value="R&eacute;initialiser" type="reset" />
 </form>
 <br/>
 <?php
@@ -80,9 +80,8 @@ if(isset($_GET['ban']) && $_GET['ban']=="ok"){
 echo '<div id="erreur">Votre compte a été black-listé!</div>';
 }
 ?>
-?>
 
-<p id="lien"><a href="index.php">Connexion</a> | <a href="auth-creer-compte.php">Cr&eacute;er un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
+<p id="lien"><a href="index1.php">Connexion</a> | <a href="auth-creer-compte.php">Cr&eacute;er un compte</a> | <a href="auth-identifiant-perdu.php">Identifiant perdu?</a></p>
 </div>
  
 <noscript><div id="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>
