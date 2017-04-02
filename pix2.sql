@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1:3388
--- Généré le :  Dim 02 Avril 2017 à 12:27
+-- Généré le :  Dim 02 Avril 2017 à 13:14
 -- Version du serveur :  5.6.19
 -- Version de PHP :  5.4.31
 
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `login` (
 --
 
 INSERT INTO `login` (`id`, `pseudo`, `pass`, `email`, `valide`, `statut`, `date`) VALUES
-(2, 'DerpyCat', '060298', 'juliette.desormonts@gmail.com', '1', '1', '2017-03-31');
+(1, 'DerpyCat', '060298', 'juliette.desormonts@gmail.com', '1', '1', '2017-03-31');
 
 -- --------------------------------------------------------
 
