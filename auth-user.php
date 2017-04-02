@@ -23,18 +23,22 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="Content-Language" content="fr" />
 <title>Administration</title>
-<link type="text/css" href="auth-style.css" rel="stylesheet"/>
+<link type="text/css" href="auth-user.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
  
 <body>
  
 <div id="cadre">
- 
+
 <?php include('auth-menu.php');?>
+IMPLEMENTER ICI L'HISTORIQUE DES COMMANDES
+<br>
+<center><a href="Liste des restaurants.php" class="commander" style="text-align:center">Commander</a></center>
+<br>
+ </div>
  
-<p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
- 
-</div>
+
  
 </body>
 </html>

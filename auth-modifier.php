@@ -25,7 +25,8 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     <meta http-equiv="Content-Type" content="text/html; UTF-8" />
     <meta http-equiv="Content-Language" content="fr" />
     <title>Modification de votre profil</title>
-    <link type="text/css" href="auth-style.css" rel="stylesheet"/>
+    <link type="text/css" href="auth-style.css" rel="stylesheet"/>	
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <script type="text/javascript">
     <!--
     /*     Fonction permettant d'afficher le message de chargement lors de l'upload de l'image.     Cette fonction permet également de cacher certains éléments pendant le temps de chargement.     */
@@ -54,7 +55,7 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     </script>
     </head>
  
-    <body>
+    <body background="img/background2.jpg">
  
     <div id="cadre">
  
@@ -121,16 +122,14 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     }
     ?>
 
-    </div>
-
-<h2>Télécharger une image</h2>
+<br><h2>T&eacute;l&eacute;charger une image</h2><br>
  
-    <div class="info">Image au format « jpg » uniquement. L'image sera redimensionné automatiquement en 60*60. Une image trop volumineuse ne sera pas pris en charge!</div>
+    <div class="info">Image au format « jpg » uniquement. L'image sera redimensionn&eacute;e automatiquement en 60*60. Une image trop volumineuse ne sera pas prise en charge!</div>
  
-<form enctype="multipart/form-data" action="#" method="post" onsubmit="Verif_attente('message_attente')" id="upload">
+<br><form enctype="multipart/form-data" action="#" method="post" onsubmit="Verif_attente('message_attente')" id="upload">
 <label for="photo">Image :</label>
 <input name="uploadFile" type="file" />
-<input type="submit" name="photo" id="photo" value="Envoyer la photo" /><br/>
+<br><input type="submit" name="photo" id="photo" value="Envoyer la photo" /><br/>
 </form>
  
 <!--ci-dessous s'affiche le message d'attente lors de l'upload d'une image-->
@@ -217,8 +216,7 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
     if (file_exists('auth-photos/'.$id.'.jpg')){
         echo '<div style="margin-left: 350px;"><img align="middle" class="avatar" alt="avatar" src="auth-photos/'.$id.'.jpg"/><a title="Supprimer cette image" href="auth-modifier.php?nom='.$id.'.jpg">« Supprimer »</a><br/><span id="cache">Si l\'image ne s\'actualise pas, <button onclick="javascript:location.reload();">Recharger la page</button></span></div>';
     }
-    ?>
-    
+    ?>    
     </div>
     
     <noscript><div class="erreur"><b>Votre navigateur ne prend pas en charge JavaScript!</b> Veuillez activer JavaScript afin de profiter pleinement du site.</div></noscript>
