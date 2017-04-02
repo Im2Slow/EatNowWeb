@@ -13,6 +13,7 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+	<meta http-equiv="Content-Language" content="fr-FR"/>
     <link rel="stylesheet" href="Liste des restaurants.css" />
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <title>Liste des restaurants</title>
@@ -24,13 +25,20 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 Veuillez choisir le restaurant chez lequel vous voulez commander : <br><br>
 	<?php 
 	// 5 - la requête liste des restos
-    $index = mysql_query('SELECT Name AS nom, Location AS addresse, Type AS type, Description AS description FROM restaurants');	
+    $index = mysql_query('SELECT Name AS nom, Location AS adresse, Type AS type, Description AS description FROM restaurants');	
 
 // 6-  l'affichage des restos
 	while($result = mysql_fetch_array($index)){
-echo            
-'<input type="radio" name="restaurant" value="'.$result['nom'].'" id="'.$result['nom'].'" /> <label for="'.$result['nom'].'">'.$result['nom'].'</label><br><br>
-';
+echo     '<a href="#">
+<input type="radio" name="restaurant" value="'.$result['nom'].'" id="'.$result['nom'].'" />
+<label for="'.$result['nom'].'">
+<b>'.$result['nom'].'</b>
+<span>
+<i>Adresse</i> : '.$result['adresse'].'<br>
+<i>Type</i> : '.$result['type'].'<br>
+</span>
+</label>
+</a><br><br>';
 	}?>
 	<input type="submit" value="Suivant" />
 	</form>
