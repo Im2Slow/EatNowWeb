@@ -5,7 +5,9 @@
 <meta http-equiv="Content-Language" content="fr" />
 <title>Identifiant perdu</title>
 <link rel="stylesheet" href="auth-style-index.css" type="text/css" media="screen" />
-<body>
+</head>
+
+<body background="img/french_fries_and_chips.jpg">
  
 <div id="centre">
 <h1>Identifiant perdu</h1>

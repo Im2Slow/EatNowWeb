@@ -23,19 +23,19 @@ if(isset($_SESSION['pseudo']) && isset($_SESSION['pass'])){
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="Content-Language" content="fr" />
 <title>Administration</title>
-<link type="text/css" href="auth-style.css" rel="stylesheet"/>
+<link type="text/css" href="auth-user.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
  
-<body background="img/background2.jpg">
+<body>
  
 <div id="cadre">
- 
+
 <?php include('auth-menu.php');?>
- <p>
+IMPLEMENTER ICI L'HISTORIQUE DES COMMANDES
 <br>
 <center><a href="Liste des restaurants.php" class="commander" style="text-align:center">Commander</a></center>
-<br></p>
+<br>
  </div>
  
 

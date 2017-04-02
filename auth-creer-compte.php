@@ -12,10 +12,14 @@
  
 <h1>Cr&eacute;er un compte</h1>
  <form method="POST" action="#">
-<label for="pseudo">Pseudo : </label><input type="text" name="pseudo" maxlength="20" value="<?php if (!empty($_POST["pseudo"])) { echo stripcslashes(htmlspecialchars($_POST["pseudo"],ENT_QUOTES)); } ?>" /><br/>
-<label for="pass">Mot de Passe : </label><input type="password" name="motdepass" maxlength="20" value="<?php if (!empty($_POST["motdepass"])) { echo stripcslashes(htmlspecialchars($_POST["motdepass"],ENT_QUOTES)); } ?>" /><br/>
-<label for="email">Email : </label><input type="text" name="email" maxlength="50" value="<?php if (!empty($_POST["email"])) { echo stripcslashes(htmlspecialchars($_POST["email"],ENT_QUOTES)); } ?>" /><br/>
-<label for="action">Action : </label><input type="submit" name="Valider" value="Valider" />
+<label for="pseudo">Pseudo : </label>
+<input type="text" name="pseudo" maxlength="20" value="<?php if (!empty($_POST["pseudo"])) { echo stripcslashes(htmlspecialchars($_POST["pseudo"],ENT_QUOTES)); } ?>" /> <br/>
+<label for="pass">Mot de Passe : </label>
+<input type="password" name="motdepass" maxlength="20" value="<?php if (!empty($_POST["motdepass"])) { echo stripcslashes(htmlspecialchars($_POST["motdepass"],ENT_QUOTES)); } ?>" /><br/>
+<label for="email">Email : </label>
+<input type="text" name="email" maxlength="50" value="<?php if (!empty($_POST["email"])) { echo stripcslashes(htmlspecialchars($_POST["email"],ENT_QUOTES)); } ?>" /><br/>
+<label for="action">Action : </label>
+<input type="submit" name="Valider" value="Valider" />
 <input name="Réinitialiser" value="R&eacute;initialiser" type="reset" />
 </form>
 <br/>
@@ -59,7 +63,7 @@ if(isset($_POST['Envoyer'])){
 		//date du jour
 		$date=date("Y-m-d");
 			// on enregistre les données
-			$insert = mysql_query("INSERT INTO LOGIN VALUES ( '', '".mysql_real_escape_string(stripcslashes(utf8_decode($_POST['pseudo'])))."', '".mysql_real_escape_string(stripcslashes(utf8_decode($_POST['motdepass'])))."', '".mysql_real_escape_string(stripcslashes($_POST['email']))."', '".mysql_real_escape_string('0')."',  '".mysql_real_escape_string('0')."', '".mysql_real_escape_string($date)."' ) ");
+			$insert = mysql_query("INSERT INTO login VALUES ( '', '".mysql_real_escape_string(stripcslashes(utf8_decode($_POST['pseudo'])))."', '".mysql_real_escape_string(stripcslashes(utf8_decode($_POST['motdepass'])))."', '".mysql_real_escape_string(stripcslashes($_POST['email']))."', '".mysql_real_escape_string('0')."',  '".mysql_real_escape_string('0')."', '".mysql_real_escape_string($date)."' ) ");
 			//Si il y a une erreur
 			if (!$insert) {
 				die('Requête invalide : ' . mysql_error());
