@@ -1,3 +1,35 @@
+            a{ 
+                color:#4c0ed8; 
+                 
+            } 
+            a:hover,a:focus{
+                color:#000;
+            }
+            
+            /* Position et couleur bulle */
+            a span{ 
+                position:absolute;
+                margin-top:-10px; 
+                margin-left:50px;
+                color:#fff; 
+                background:rgba(139, 69, 19, 0.8); 
+                padding:5px; 
+                border-radius:3px; 
+                
+                /* Faire disparaire infobulle par défaut */
+                /* Faire durer l'effet */
+                transition:all 0.25s;
+                /* Effet sur la transparence */ 
+                opacity:0;
+            }
+            
+            /* Apparition de la bulle avec le scale à 1 */ 
+            a:hover span, a:focus span{
+                transform:scale(1) rotate(0);
+                /* Effet sur la transparence */ 
+                opacity:1;
+            }
+
 .retour {
 	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
