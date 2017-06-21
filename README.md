@@ -11,4 +11,4 @@ We coudn't set a real payment procedure because we need to have parternships wit
 LIVE DEMO : <a href="http:\\www.pole-minute.fr">ftp:\\http:\\www.pole-minute.fr</a>
 
 Last updated : 17/05/17
-files not up date !
+Files not up to date !
